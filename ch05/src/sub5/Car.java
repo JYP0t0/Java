@@ -1,31 +1,30 @@
-package sub2;
+package sub5;
 
-//클래스 정의
+// 클래스 정의
 public class Car {
-
-	//속성은 무조건 private 선언
-	private String name;
-	private String color;
-	private int speed;
 	
-	//생성자(Constructor) : 캡슐화된 클래스 속성을 초기화하는 메서드
-	public Car(String name, String color, int speed) {
-		
+	// 상속관계에서 자식클래스에서 접근(참조)할 수 있게 private에서 protected로 변경
+	protected String name;
+	protected String color;
+	protected int speed;
+	
+	// 생성자(Constructor) : 캡슐화된 클래스 속성을 초기화하는 메서드
+	public Car(String name, String color, int speed) {		
 		this.name = name;
 		this.color = color;
 		this.speed = speed;
 	}
 	
-	//Setter : 캡슐화된 속성에 대한 추가적인 수정을 위한 메서드  (set/get + ctrl + space)
+	// Getter, Setter : 캡슐화된 속성에 대한 추가적인 수정을 위한 메서드
 	public void setColor(String color) {
 		this.color = color;
 	}
 	
 	public String getColor() {
 		return color;
-	}
-	
-	//기능(멤버 메서드)
+	}		
+		
+	// 기능(멤버 메서드)
 	public void speedUp(int speed) {
 		this.speed += speed;
 	}
@@ -40,3 +39,7 @@ public class Car {
 		System.out.println("현재속도 : " + this.speed);
 	}
 }
+
+
+
+

@@ -30,5 +30,6 @@ public class SwitchTest {
 			System.out.println("number는 홀수");
 			break;
 		}
+		sc.close();
 	}
 }

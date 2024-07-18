@@ -12,7 +12,7 @@ public class Test02 {
 		for (int i = 0; i < a; i++) {
 			int b = sc.nextInt();
 			int c = sc.nextInt();
-			arr[i] = a + b;
+			arr[i] = b + c;
 		}
 		sc.close();
 	

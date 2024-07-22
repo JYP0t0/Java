@@ -9,7 +9,7 @@ public class ThreadWaitNotifyTest {
 		WorkObject workObject = new WorkObject();
 		
 		ThreadA threadA = new ThreadA(workObject);
-		ThreadA threadB = new ThreadB(workObject);
+		ThreadB threadB = new ThreadB(workObject);
 	
 		threadA.start();
 		threadB.start();
